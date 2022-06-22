@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DashboardActivity">
+
+    <Button
+        android:id="@+id/balebtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="View Bale"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:backgroundTint="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/inwardbtn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/balebtn"
+        android:text="@string/inward"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:backgroundTint="@color/blue"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/dispatchbtn"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/balebtn"
+        android:layout_toRightOf="@+id/inwardbtn"
+        android:text="Stock dispatch"
+        android:textSize="17dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:backgroundTint="@color/blue"
+        app:title="DASHBOARD"
+        app:titleTextColor="@color/white"/>
+
+</RelativeLayout>
